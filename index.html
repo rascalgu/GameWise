@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>时光之冕 — 魔兽世界80级怀旧时光服攻略</title>
+<meta name="description" content="最全面的魔兽世界WLK怀旧时光服攻略站：职业指南、副本攻略、专业推荐、升级路线、PVP技巧一应俱全。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect rx='4' width='32' height='32' fill='%231a6a9a'/><text x='16' y='22' text-anchor='middle' fill='%23f0c040' font-size='20' font-weight='bold'>W</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="frostCanvas"></canvas>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <div class="brand-icon">W</div>
+    <span>时光之冕</span>
+  </div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="#server" class="active">时光服</a>
+    <a href="#classes">职业</a>
+    <a href="#dungeons">副本</a>
+    <a href="#professions">专业</a>
+    <a href="#leveling">升级</a>
+    <a href="#pvp">PVP</a>
+    <a href="#reputation">声望</a>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">WLK 3.3.5 时光服</div>
+    <h1>巫妖王之怒<br>时光怀旧攻略</h1>
+    <p class="hero-subtitle">从 1 级到 80 级，从新手村到冰冠堡垒</p>
+    <p class="hero-desc">全面涵盖职业天赋、副本策略、专业收益、升级路线、PVP战场和声望指南——让你的艾泽拉斯之旅不再迷茫</p>
+    <div class="hero-actions">
+      <a href="#classes" class="btn btn-primary">浏览职业指南</a>
+      <a href="#dungeons" class="btn btn-secondary">副本攻略</a>
+      <a href="#leveling" class="btn btn-gold">快速升级路线</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Server Info ===== -->
+<section class="server-info" id="server">
+  <div class="container">
+    <h2 class="section-title">时光服务器特色</h2>
+    <p class="section-subtitle">巫妖王之怒 3.3.5 版本 · 经典怀旧体验</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="icon">⚔️</span>
+        <h3>版本特色</h3>
+        <p>基于 WLK 3.3.5 版本，完整的诺森德大陆、达拉然主城、奥杜尔与冰冠堡垒等经典团队副本，还原最纯正的80级体验。</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">📈</span>
+        <h3>升级加速</h3>
+        <p>时光服特有的经验加成，1-60级 3倍经验、60-70级 2倍经验、70-80级 1.5倍经验，让你轻松跨越等级鸿沟。</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🛡️</span>
+        <h3>天赋双专精</h3>
+        <p>开放双天赋系统，可在主城轻松切换输出/坦克/治疗专精。铭文专业可解锁额外的第三个雕文插槽。</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🏆</span>
+        <h3>竞技场与战场</h3>
+        <p>完整的竞技场赛季轮换，勇闯战场节日系统。评级战场与竞技场均可获得最高等级的PVP装备。</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">⛏️</span>
+        <h3>专业收益平衡</h3>
+        <p>所有专业均有专属收益：工程学的手套加速附魔、锻造的额外插槽、珠宝加工的特有宝石等，每个专业都值得选择。</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🗡️</span>
+        <h3>跨服战场</h3>
+        <p>支持跨服战场匹配系统，冬拥湖大型PVPVE区域定时开放，阵营平衡机制确保公平对战环境。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Class Guide ===== -->
+<section class="class-guides" id="classes">
+  <div class="container">
+    <h2 class="section-title">职业指南</h2>
+    <p class="section-subtitle">十职业完全攻略 · 天赋推荐 · 输出循环 · 配装建议</p>
+    <div class="class-grid">
+      <div class="class-card" data-class="deathknight" data-page="pages/deathknight.html">
+        <div class="class-icon" style="background:rgba(196,30,58,0.15);border-color:rgba(196,30,58,0.3);color:#c41e3a;">DK</div>
+        <h4>死亡骑士</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+      <div class="class-card" data-class="druid" data-page="pages/druid.html">
+        <div class="class-icon" style="background:rgba(255,125,10,0.15);border-color:rgba(255,125,10,0.3);color:#ff7d0a;">德</div>
+        <h4>德鲁伊</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+      <div class="class-card" data-class="hunter" data-page="pages/hunter.html">
+        <div class="class-icon" style="background:rgba(171,212,115,0.15);border-color:rgba(171,212,115,0.3);color:#abd473;">猎</div>
+        <h4>猎人</h4>
+        <span class="class-role role-dps">DPS</span>
+      </div>
+      <div class="class-card" data-class="mage" data-page="pages/mage.html">
+        <div class="class-icon" style="background:rgba(105,204,240,0.15);border-color:rgba(105,204,240,0.3);color:#69ccf0;">法</div>
+        <h4>法师</h4>
+        <span class="class-role role-dps">DPS</span>
+      </div>
+      <div class="class-card" data-class="paladin" data-page="pages/paladin.html">
+        <div class="class-icon" style="background:rgba(245,140,186,0.15);border-color:rgba(245,140,186,0.3);color:#f58cba;">骑</div>
+        <h4>圣骑士</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+      <div class="class-card" data-class="priest" data-page="pages/priest.html">
+        <div class="class-icon" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:#ffffff;">牧</div>
+        <h4>牧师</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+      <div class="class-card" data-class="rogue" data-page="pages/rogue.html">
+        <div class="class-icon" style="background:rgba(255,245,105,0.15);border-color:rgba(255,245,105,0.3);color:#fff569;">贼</div>
+        <h4>潜行者</h4>
+        <span class="class-role role-dps">DPS</span>
+      </div>
+      <div class="class-card" data-class="shaman" data-page="pages/shaman.html">
+        <div class="class-icon" style="background:rgba(0,112,222,0.15);border-color:rgba(0,112,222,0.3);color:#0070dd;">萨</div>
+        <h4>萨满</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+      <div class="class-card" data-class="warlock" data-page="pages/warlock.html">
+        <div class="class-icon" style="background:rgba(148,130,201,0.15);border-color:rgba(148,130,201,0.3);color:#9482c9;">术</div>
+        <h4>术士</h4>
+        <span class="class-role role-dps">DPS</span>
+      </div>
+      <div class="class-card" data-class="warrior" data-page="pages/warrior.html">
+        <div class="class-icon" style="background:rgba(199,156,110,0.15);border-color:rgba(199,156,110,0.3);color:#c79c6e;">战</div>
+        <h4>战士</h4>
+        <span class="class-role role-mixed">混合</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Raid Guides ===== -->
+<section class="dungeons" id="dungeons">
+  <div class="container">
+    <h2 class="section-title">团队副本攻略</h2>
+    <p class="section-subtitle">全Boss机制详解 · 坦克/治疗/DPS职责分工 · 合剂准备清单</p>
+
+    <div class="prep-checklist">
+      <h3>📋 副本开荒通用准备清单</h3>
+      <div style="font-size:0.9rem;color:#a0b0c0;line-height:1.8;margin-top:0.5rem;">
+        <strong>合剂：</strong> 冰霜巨龙合剂(法系DPS+治疗) / 无尽怒气合剂(物理DPS) / 石血合剂(坦克) — 每灭一次补一瓶，准备5-10瓶<br>
+        <strong>食物：</strong> 鱼肉大餐(+46法伤) / 虫肉大餐(+46攻强) / 耐力食物(+40耐) / 芦笋汤(+46法伤) — 全团统一吃<br>
+        <strong>药水：</strong> 狂野魔法药水(法系爆发) / 速度药水(物理爆发) / 不灭药水(坦克保命) / 符文法力药水(治疗回蓝)<br>
+        <strong>武器增益：</strong> 卓越巫师之油(法系+42法伤,持续1小时) / 卓越锋利之油(物理+40暴击) — 灭了必须重上<br>
+        <strong>工程学：</strong> 硝基推进器加满燃料、手套加速器充能、随身邮箱/修理机器人<br>
+        <strong>附魔/宝石：</strong> 全装备附魔齐全、宝石插好、腿甲片/魔线已上<br>
+        <strong>团队：</strong> 修理机器人(工程) / 大锅(炼金) / 餐桌(法师) / 战鼓(制皮) / SX号角<br>
+        <strong>插件：</strong> DBM/BigWigs + Deadly Boss Mods + GTFO(站位警告) — 开荒必备<br>
+        <strong>网络：</strong> 确保网络稳定，建议开荒前重启路由器<br>
+        <strong>心态：</strong> 开荒灭团正常，每灭一次总结机制避免重复错误
+      </div>
+    </div>
+
+    <div class="dungeon-grid">
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/icc.html'" style="cursor:pointer;border-color:rgba(200,50,50,0.15);">
+        <div class="dungeon-header">
+          <h3>冰冠堡垒</h3>
+          <span class="dungeon-badge badge-raid">最终副本</span>
+        </div>
+        <div class="dungeon-body">
+          <p>WLK最终团队副本，直面巫妖王阿尔萨斯。12个Boss分布在冰冠冰川之巅。普通和英雄模式。掉落全版本最强装备。</p>
+          <div class="boss-list">Boss：<span>玛洛加尔</span><span>亡语者女士</span><span>炮艇</span><span>萨鲁法尔</span><span>烂肠</span><span>腐面</span><span>普崔塞德</span><span>鲜血议会</span><span>鲜血女王</span><span>绿龙</span><span>辛达苟萨</span><span>巫妖王</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/icc.html" class="btn btn-primary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看完整攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/toc.html'" style="cursor:pointer;">
+        <div class="dungeon-header">
+          <h3>十字军的试炼</h3>
+          <span class="dungeon-badge badge-raid">P3核心</span>
+        </div>
+        <div class="dungeon-body">
+          <p>无小怪直冲Boss的紧凑副本，5个Boss从猛兽到阿努巴拉克。普通/英雄+10/25人模式。装备快速提升的绝佳选择。</p>
+          <div class="boss-list">Boss：<span>诺森德猛兽</span><span>贾拉克苏斯</span><span>阵营冠军</span><span>瓦格里双子</span><span>阿努巴拉克</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/toc.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看完整攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/ulduar.html'" style="cursor:pointer;border-color:rgba(240,192,64,0.12);">
+        <div class="dungeon-header">
+          <h3>奥杜尔</h3>
+          <span class="dungeon-badge badge-raid">P2经典</span>
+        </div>
+        <div class="dungeon-body">
+          <p>泰坦之城，14个Boss(含隐藏奥尔加隆)。独特的困难模式触发机制。零灯尤格-萨隆是WLK最高难度挑战之一。</p>
+          <div class="boss-list">Boss：<span>烈焰巨兽</span><span>锐鳞</span><span>拆解者</span><span>钢铁议会</span><span>科隆加恩</span><span>霍迪尔</span><span>索林姆</span><span>芙蕾雅</span><span>米米尔隆</span><span>维扎克斯</span><span>尤格-萨隆</span><span>奥尔加隆</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/ulduar.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看完整攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/naxx.html'" style="cursor:pointer;">
+        <div class="dungeon-header">
+          <h3>纳克萨玛斯</h3>
+          <span class="dungeon-badge badge-dungeon">P1入门</span>
+        </div>
+        <div class="dungeon-body">
+          <p>重返纳克萨玛斯！15个Boss分布在蜘蛛区、构造区、瘟疫区、军事区。WLK第一个团队副本，入门级难度。</p>
+          <div class="boss-list">Boss：<span>阿努布雷坎</span><span>黑女巫</span><span>迈克斯纳</span><span>帕奇维克</span><span>格罗布鲁斯</span><span>格拉斯</span><span>塔迪乌斯</span><span>教官</span><span>高希</span><span>四骑士</span><span>诺斯</span><span>希尔盖</span><span>洛欧塞布</span><span>萨菲隆</span><span>克尔苏加德</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/naxx.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看完整攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/other.html'" style="cursor:pointer;">
+        <div class="dungeon-header">
+          <h3>永恒之眼</h3>
+          <span class="dungeon-badge badge-raid">P1</span>
+        </div>
+        <div class="dungeon-body">
+          <p>考达拉魔法之塔顶端，直面蓝龙之王玛里苟斯。3阶段战斗含空中龙骑阶段。</p>
+          <div class="boss-list">Boss：<span>玛里苟斯</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/other.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/other.html'" style="cursor:pointer;">
+        <div class="dungeon-header">
+          <h3>黑曜石圣殿</h3>
+          <span class="dungeon-badge badge-raid">P1</span>
+        </div>
+        <div class="dungeon-body">
+          <p>龙骨荒野黑龙圣地。萨塔里奥+3只暮光幼龙。保留幼龙越多难度越高(0龙模式坦克压力极大)。</p>
+          <div class="boss-list">Boss：<span>萨塔里奥</span><span>暮光幼龙×3</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/other.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看攻略 →</a></div>
+        </div>
+      </div>
+      <div class="dungeon-card" onclick="window.location.href='pages/raids/other.html'" style="cursor:pointer;">
+        <div class="dungeon-header">
+          <h3>阿尔卡冯的宝库</h3>
+          <span class="dungeon-badge badge-dungeon">周常</span>
+        </div>
+        <div class="dungeon-body">
+          <p>冬拥湖周常团队副本，Boss轮换。掉落T7/T8/T9套装兑换物+S系列PVP套装。每周必打！</p>
+          <div class="boss-list">Boss：<span>阿尔卡冯</span><span>埃玛尔隆</span><span>库拉冈</span><span>托尔瓦</span></div>
+          <div style="margin-top:0.8rem;"><a href="pages/raids/other.html" class="btn btn-secondary" style="font-size:0.8rem;padding:0.4rem 1rem;">查看攻略 →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- ===== Professions ===== -->
+<section class="professions" id="professions">
+  <div class="container">
+    <h2 class="section-title">专业指南</h2>
+    <p class="section-subtitle">各专业收益分析 · 最佳搭配推荐</p>
+    <div class="prof-grid">
+      <div class="prof-card">
+        <div class="prof-icon">⚒️</div>
+        <h4>采矿</h4>
+        <p>采集矿石，耐力加成（约60耐）。与锻造/工程学搭配最佳。</p>
+        <div class="prof-bonus">+60 耐力 (被动)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">🌿</div>
+        <h4>采药</h4>
+        <p>采集草药，HoT小回血技能。与炼金术搭配最佳。</p>
+        <div class="prof-bonus">生命之血 — 5秒内恢复3000生命</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">🐟</div>
+        <h4>剥皮</h4>
+        <p>剥取皮革，暴击等级加成。与制皮搭配最佳。</p>
+        <div class="prof-bonus">+40 暴击等级 (被动)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">🔨</div>
+        <h4>锻造</h4>
+        <p>制造板甲装备，额外插槽奖励。手套/护腕各可打一孔。</p>
+        <div class="prof-bonus">额外两个无色宝石插槽</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">🧪</div>
+        <h4>炼金术</h4>
+        <p>制造药水合剂，合剂持续时间翻倍，专属混合药剂。</p>
+        <div class="prof-bonus">合剂效果翻倍 + 专属药水</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">📜</div>
+        <h4>附魔</h4>
+        <p>装备附魔，专属戒指附魔（每环+23法伤/40攻强）。</p>
+        <div class="prof-bonus">双戒指附魔 (46法伤/80攻强)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">⚙️</div>
+        <h4>工程学</h4>
+        <p>制造枪械、炸弹、护目镜。手套加速附魔(PVE)/氮气推进(PVP)核心收益。</p>
+        <div class="prof-bonus">手套加速(340急速12秒) + 火箭靴</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">💎</div>
+        <h4>珠宝加工</h4>
+        <p>切割宝石，专属龙眼石（3颗，每颗+34主属性）。</p>
+        <div class="prof-bonus">3颗专属龙眼石 (+102主属性)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">📖</div>
+        <h4>铭文</h4>
+        <p>制造雕文和副手。专属肩膀附魔（比声望附魔额外+80攻强/46法伤）。</p>
+        <div class="prof-bonus">专属肩膀附魔 (+80攻强/46法伤)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">🛡️</div>
+        <h4>制皮</h4>
+        <p>制造皮甲锁甲装备和护腿片。专属护腕附魔。</p>
+        <div class="prof-bonus">专属护腕附魔 (+130攻强/76法伤)</div>
+      </div>
+      <div class="prof-card">
+        <div class="prof-icon">👗</div>
+        <h4>裁缝</h4>
+        <p>制造布甲装备。专属披风刺绣，触发法伤/攻强。</p>
+        <div class="prof-bonus">刺绣触发 (295法伤15秒/400攻强15秒)</div>
+      </div>
+    </div>
+    <div class="prof-pairing">
+      <h3>专业搭配推荐</h3>
+      <div class="pairing-grid">
+        <div class="pairing-item"><strong>法系DPS</strong> — 工程 + 裁缝/附魔</div>
+        <div class="pairing-item"><strong>物理DPS</strong> — 工程 + 珠宝/锻造</div>
+        <div class="pairing-item"><strong>坦克</strong> — 工程 + 珠宝/采矿</div>
+        <div class="pairing-item"><strong>治疗</strong> — 工程 + 珠宝/裁缝</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Leveling Guide ===== -->
+<section class="leveling" id="leveling">
+  <div class="container">
+    <h2 class="section-title">升级路线</h2>
+    <p class="section-subtitle">时光服经验加成 · 最优任务路线 · 副本穿插方案</p>
+    <div class="leveling-timeline">
+      <div class="level-step">
+        <div class="level-number">1-15</div>
+        <div class="level-content">
+          <h3>起始区域 1-15级</h3>
+          <p>完成种族新手村任务链，约15-30分钟即可达到15级。时光服3倍经验加持下，新手任务做5-8个任务即可升级。</p>
+        </div>
+      </div>
+      <div class="level-step">
+        <div class="level-number">15-58</div>
+        <div class="level-content">
+          <h3>经典旧世 15-58级</h3>
+          <p>推荐副本穿插升级至58：死亡矿井(15-20)→暴风城监狱(20-25)→血色修道院(30-42)→祖尔法拉克(42-47)→斯坦索姆(47-55)→通灵学院/黑石深渊(55-58)。3倍经验下副本升级极快。</p>
+        </div>
+      </div>
+      <div class="level-step">
+        <div class="level-number">58-68</div>
+        <div class="level-content">
+          <h3>外域 58-68级</h3>
+          <p>地狱火半岛(58-62)→赞加沼泽(62-64)→泰罗卡森林/纳格兰(64-67)→刀锋山/虚空风暴(67-68)。2倍经验加持，纳格兰任务必做。穿插破碎大厅、蒸汽地窖、法力陵墓等副本。</p>
+        </div>
+      </div>
+      <div class="level-step">
+        <div class="level-number">68-80</div>
+        <div class="level-content">
+          <h3>诺森德 68-80级</h3>
+          <p>推荐路线：北风苔原/嚎风峡湾(68-72)→龙骨荒野(72-74)→灰熊丘陵/祖达克(74-76)→索拉查盆地(76-78)→风暴峭壁/冰冠冰川(78-80)。1.5倍经验下，诺森德任务加随机副本即可顺利满级。</p>
+        </div>
+      </div>
+      <div class="level-step">
+        <div class="level-number">80</div>
+        <div class="level-content">
+          <h3>满级之后</h3>
+          <p>达到80级后优先完成：①每日英雄副本刷凯旋纹章 ②开启冰冠冰川任务链获取起始紫装 ③加入公会参与10人TOC/奥杜尔 ④开始积累竞技场/评级战场装备。别忘了学习飞行骑术(310%)和寒冷飞行！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PvP Guide ===== -->
+<section class="pvp-guide" id="pvp">
+  <div class="container">
+    <h2 class="section-title">PVP 攻略</h2>
+    <p class="section-subtitle">竞技场 · 评级战场 · 野外PVP · 战场节日</p>
+    <div class="pvp-grid">
+      <div class="pvp-card">
+        <div class="pvp-icon">⚔️</div>
+        <h3>竞技场</h3>
+        <p>2v2、3v3、5v5三大竞技场模式，每周10场即可获得周常奖励。3v3和5v5的等级分权重更高，可获得最高品质武器。热门组合：贼法牧、战骑德、猎野牧。</p>
+        <div class="pvp-stats">
+          <span>赛季制轮换</span>
+          <span>等级分匹配</span>
+        </div>
+      </div>
+      <div class="pvp-card">
+        <div class="pvp-icon">🏴</div>
+        <h3>评级战场</h3>
+        <p>10v10评级战场：战歌峡谷、阿拉希盆地、风暴之眼、奥特兰克山谷、征服之岛。评级等级达到2400可购买精锐套装和竞技场武器。</p>
+        <div class="pvp-stats">
+          <span>精锐外观</span>
+          <span>2400武器</span>
+        </div>
+      </div>
+      <div class="pvp-card">
+        <div class="pvp-icon">❄️</div>
+        <h3>冬拥湖</h3>
+        <p>每周二、四、六晚开放。40v40大型PVPVE战场，获胜方获得冬拥湖荣誉奖章和岩石守卫碎片，可购买紫色品质PVP装备和坐骑（黑色猛犸战象）。</p>
+        <div class="pvp-stats">
+          <span>40v40</span>
+          <span>PVPVE</span>
+        </div>
+      </div>
+      <div class="pvp-card">
+        <div class="pvp-icon">⚡</div>
+        <h3>战场节日</h3>
+        <p>每日随机战场额外奖励，节日战场周（如战歌峡谷节日、阿拉希盆地节日等）提供双倍荣誉和额外征服点数。奥特兰克山谷节日是快速刷荣誉的最佳选择。</p>
+        <div class="pvp-stats">
+          <span>双倍荣誉</span>
+          <span>节日轮换</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reputation ===== -->
+<section class="reputation" id="reputation">
+  <div class="container">
+    <h2 class="section-title">声望攻略</h2>
+    <p class="section-subtitle">重要声望奖励 · 快速冲声望方法</p>
+    <div class="rep-grid">
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(100,180,255,0.1);color:#64b4ff;">H</div>
+        <div class="rep-info">
+          <h4>霍迪尔之子</h4>
+          <p>风暴峭壁声望，必冲！唯一提供肩膀附魔的声望。每天做日常+交永冻碎片，约2周崇拜。</p>
+          <div class="rep-reward">奖励：肩膀附魔（坦克/DPS/治疗三种）</div>
+        </div>
+      </div>
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(255,200,50,0.1);color:#ffc832;">K</div>
+        <div class="rep-info">
+          <h4>黑锋骑士团</h4>
+          <p>冰冠冰川声望，提供物理DPS头部附魔。完成任务线解锁日常，约1周崇拜。</p>
+          <div class="rep-reward">奖励：物理DPS头部附魔（50攻强/20暴击）</div>
+        </div>
+      </div>
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(100,200,150,0.1);color:#64c896;">龙</div>
+        <div class="rep-info">
+          <h4>龙眠联军</h4>
+          <p>龙骨荒野声望，提供坦克头部附魔。通过任务和副本提升声望。</p>
+          <div class="rep-reward">奖励：坦克头部附魔（15防等/15闪避）</div>
+        </div>
+      </div>
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(200,150,255,0.1);color:#c896ff;">S</div>
+        <div class="rep-info">
+          <h4>银色北伐军</h4>
+          <p>冰冠冰川/达拉然声望，提供治疗头部附魔和战袍。完成冰冠冰川任务线开启日常。</p>
+          <div class="rep-reward">奖励：治疗头部附魔（30法伤/5回10）</div>
+        </div>
+      </div>
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(255,100,100,0.1);color:#ff6464;">肯</div>
+        <div class="rep-info">
+          <h4>肯瑞托</h4>
+          <p>达拉然声望，提供法系DPS头部附魔。完成达拉然任务和使用印记提升声望。</p>
+          <div class="rep-reward">奖励：法系头部附魔（30法伤/20暴击）</div>
+        </div>
+      </div>
+      <div class="rep-card">
+        <div class="rep-icon" style="background:rgba(255,150,50,0.1);color:#ff9632;">铭</div>
+        <div class="rep-info">
+          <h4>联盟先遣军/部落先遣军</h4>
+          <p>综合声望组，通过诺森德任务、五人本（穿战袍）提升。崇拜解锁全种族坐骑购买。</p>
+          <div class="rep-reward">奖励：全种族坐骑、炼金配方、裁缝图纸等</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="footer-links">
+    <a href="#server">时光服介绍</a>
+    <a href="#classes">职业指南</a>
+    <a href="#dungeons">副本攻略</a>
+    <a href="#professions">专业推荐</a>
+    <a href="#leveling">升级路线</a>
+    <a href="#pvp">PVP</a>
+    <a href="#reputation">声望</a>
+  </div>
+  <p>时光之冕 — 魔兽世界WLK怀旧时光服攻略站 &copy; 2026</p>
+  <p style="margin-top:0.4rem;font-size:0.8rem;color:#3a4a5a;">本站数据基于WLK 3.3.5版本 · 仅供参考，具体以游戏内为准</p>
+</footer>
+
+<!-- ===== Back to Top ===== -->
+<div class="back-top" aria-label="Back to top">↑</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冰冠堡垒 — 时光之冕攻略站</title>
+<meta name="description" content="WLK时光服冰冠堡垒(ICC)完整攻略：全12Boss机制详解、坦克/治疗/DPS职责分工、合剂准备、注意事项">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect rx='4' width='32' height='32' fill='%231a6a9a'/><text x='16' y='22' text-anchor='middle' fill='%23f0c040' font-size='20' font-weight='bold'>W</text></svg>">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-brand"><div class="brand-icon">W</div><span>时光之冕</span></div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
+  <div class="nav-links"><a href="../../index.html">首页</a><a href="../../index.html#classes">职业</a><a href="../../index.html#dungeons" class="active">副本</a><a href="../../index.html#professions">专业</a><a href="../../index.html#pvp">PVP</a></div>
+</nav>
+<div class="page-header"><h1>冰冠堡垒</h1><p>Icecrown Citadel · 巫妖王的最终堡垒</p></div>
+<div class="content-page">
+
+  <div class="raid-header-banner">
+    <div>
+      <div class="raid-info"><strong>Boss数量：</strong> 12个 (含巫妖王)</div>
+      <div class="raid-info"><strong>模式：</strong> 10人 / 25人 · 普通 / 英雄</div>
+      <div class="raid-info"><strong>声望：</strong> 冰冠冰川声望 · 灰烬审判军</div>
+    </div>
+    <div class="raid-difficulty">⭐⭐⭐⭐⭐ 最终团队副本</div>
+  </div>
+
+  <div class="prep-checklist">
+    <h3>开战前准备清单</h3>
+    <div class="checklist-grid">
+      <div class="checklist-item"><span class="check-label">合剂：</span><span class="check-value">冰霜巨龙合剂(法系) / 无尽怒气合剂(物理) / 石血合剂(坦克)</span></div>
+      <div class="checklist-item"><span class="check-label">食物：</span><span class="check-value">鱼肉大餐(46法伤) / 虫肉大餐(46攻强) / 耐力食物(40耐)</span></div>
+      <div class="checklist-item"><span class="check-label">爆发药水：</span><span class="check-value">狂野魔法药水(法系) / 速度药水(物理) / 不灭药水(坦克)</span></div>
+      <div class="checklist-item"><span class="check-label">法力恢复：</span><span class="check-value">符文法力药水 / 法力药水注射器</span></div>
+      <div class="checklist-item"><span class="check-label">武器增益：</span><span class="check-value">卓越巫师之油(法系+42法伤) / 卓越锋利之油(物理+40暴击)</span></div>
+      <div class="checklist-item"><span class="check-label">附魔/宝石：</span><span class="check-value">确认全装备附魔到位、宝石齐全、腿部附魔已上</span></div>
+      <div class="checklist-item"><span class="check-label">合剂储备：</span><span class="check-value">建议准备5-10瓶合剂，开荒期每灭一次补一瓶</span></div>
+      <div class="checklist-item"><span class="check-label">工程学：</span><span class="check-value">硝基推进器(火箭靴)检查燃料、手套加速器充能</span></div>
+      <div class="checklist-item"><span class="check-label">团队材料：</span><span class="check-value">修理机器人/铁匠锤、大锅(炼金)、桌餐(法师)、结界图腾</span></div>
+      <div class="checklist-item"><span class="check-label">其他：</span><span class="check-value">霜纹布(裁缝做战袍)、备用武器附魔、清除缓存/插件更新</span></div>
+    </div>
+  </div>
+
+  <!-- ===== Boss 1 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">1</span> 玛洛加尔领主 · Lord Marrowgar</h2>
+    <p class="boss-desc">冰冠堡垒的看门Boss。巨大的骷髅战士，手持冰霜大剑。核心机制是冷焰和骨刺旋风。开胃菜级别的Boss，但只要一个失误就可能导致灭团。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>冷焰：</strong>随机点名玩家脚下出现冰霜火焰路径，持续移动躲避。被冷焰碰到直接秒杀。<br>
+      <strong>骨刺旋风：</strong>Boss旋转造成大量物理伤害并将人击退，近战必须第一时间远离。<br>
+      <strong>军刀穿刺：</strong>对当前坦克的高伤技能，需要换坦消debuff（2-3层换）。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>2坦换嘲，军刀穿刺2-3层换</li>
+          <li>骨刺旋风时开盾墙/大墓地契约硬吃</li>
+          <li>注意冷焰路径，不要把Boss拉进火里</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>坦克换嘲期注意当前坦大掉血</li>
+          <li>骨刺旋风前预读群刷</li>
+          <li>被冷焰点名的队友治疗不能断</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>近战：骨刺旋风必须第一时间跑开</li>
+          <li>远程：分散站位，注意冷焰路线</li>
+          <li>被骨刺钉住第一时间打掉</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">合剂：物理无尽怒气/法系冰霜巨龙</span>
+      <span class="prep-tag prep-danger">危险：冷焰秒杀、骨刺旋风</span>
+      <span class="prep-tag">工程火箭靴可应急跑冷焰</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 2 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">2</span> 亡语者女士 · Lady Deathwhisper</h2>
+    <p class="boss-desc">普崔塞德的助手，控制亡灵大军的通灵师。战斗分两个阶段：P1清理源源不断的亡灵小怪，P2爆发Rush Boss本体。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>法力屏障：</strong>P1 Boss有魔法护盾，需要法系DPS破盾后才能造成伤害。<br>
+      <strong>支配之触：</strong>随机控制一名玩家（小黄圈），打掉护盾可解救。<br>
+      <strong>寒冰箭雨：</strong>全团AOE，治疗压力大。<br>
+      <strong>P2转阶段：</strong>护盾消失后Boss进入P2，召唤2个亡灵精英+本体伤害大增。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>P1小怪坦拉好亡灵小怪，注意打断施法</li>
+          <li>P2主坦拉住Boss，点名可开技能硬吃</li>
+          <li>P2副坦拉住2个精英亡灵</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>P1寒冰箭雨覆盖团刷（治疗链/野性成长/治疗之环）</li>
+          <li>P2坦克压力大增，预读大技能</li>
+          <li>被支配的队友迅速转火护盾</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>法系P1全力打法力屏障（破盾是关键）</li>
+          <li>物理DPS优先清理小怪和亡灵法师</li>
+          <li>被支配的队友附近的DPS立刻转火队友护盾</li>
+          <li>P2全技能爆发Rush Boss</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">法系建议带狂野魔法药水爆发破盾</span>
+      <span class="prep-tag prep-danger">被支配后队友被控，被控期间队友不能打</span>
+      <span class="prep-tag">P2后30秒内打不掉小怪容易灭</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 3 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">3</span> 炮艇战斗 · Gunship Battle</h2>
+    <p class="boss-desc">冰冠堡垒上空的飞艇大战。战斗分两艘飞艇互射，需要玩家跳帮到对面船上击杀NPC并返回。这是ICC最简单的Boss，组织好跳帮节奏即可。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>火箭跳帮：</strong>3-4名DPS跳到对面船上击杀火箭兵和法师。<br>
+      <strong>大炮：</strong>2-3名玩家操作大炮射击对面船体。<br>
+      <strong>修理：</strong>工程学可以修理船体（额外贡献）。<br>
+      <strong>突袭：</strong>对面会跳帮过来，守船的玩家迅速击杀。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>守在本方船上击杀跳帮过来的小怪</li>
+          <li>注意保护炮兵和大炮操作者</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>越过船的治疗要照顾跳帮队友</li>
+          <li>全船AOE伤害需要覆盖</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>3-4人负责跳帮杀火箭兵和法师</li>
+          <li>2-3人操作大炮打对面</li>
+          <li>剩下的守船击杀跳帮小怪</li>
+          <li>注意跳帮后要按时回来！</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">工程学可以修船加分</span>
+      <span class="prep-tag">最简单的Boss，按节奏打即可</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 4 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">4</span> 死亡使者萨鲁法尔 · Deathbringer Saurfang</h2>
+    <p class="boss-desc">部落英雄萨鲁法尔大王的儿子，被巫妖王复活为死亡使者。这是一个纯单体DPS检测Boss。战斗核心是管理血兽和Boss的血沸印记。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>血兽：</strong>每隔一段时间召唤三只血兽，必须迅速减速+击杀。血兽碰到人消失并治疗Boss。<br>
+      <strong>血沸印记：</strong>随机点一名玩家(通常是近战)，全团掉血由被点名者分担。<br>
+      <strong>血色之力：</strong>Boss越打越强，DPS不够狂暴直接秒杀。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>拉住Boss背对人群</li>
+          <li>注意Boss层数高了开减伤</li>
+          <li>坦克换嘲保持</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>血沸印记时全团掉血大</li>
+          <li>坦克层数高了加大治疗量</li>
+          <li>近战血沸点名那一下集中治疗</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>血兽出生第一时间转火，安排减速（冰链/雷霆/地缚）</li>
+          <li>远程优先处理血兽</li>
+          <li>近战中血沸印记要跑向人群分摊</li>
+          <li>这是一个Rush战，DPS越高越简单</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">纯DPS检测Boss，合剂食物拉满</span>
+      <span class="prep-tag prep-danger">血兽不第一时间转火=灭</span>
+      <span class="prep-tag">猎人冰霜陷阱/萨满地缚图腾控制血兽</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 5 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">5</span> 烂肠 · Festergut</h2>
+    <p class="boss-desc">普崔塞德制造的憎恶怪物。纯硬件检测Boss，考验团队的群体治疗和AOE DPS能力。战斗中的刺鼻呕吐需要近战硬吃。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>刺鼻呕吐：</strong>Boss前方锥形范围AOE，近战范围必须硬吃。<br>
+      <strong>孢子爆炸：</strong>3个远程被点名，爆炸时附近的队友受到的伤害降低25%，必须让孢子炸到人群中。<br>
+      <strong>狂啸：</strong>Boss每隔一段时间全团AOE，治疗压力巨大。<br>
+      <strong>狂暴时间：</strong>5分钟狂暴，DPS必须达标。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>Boss背对人群，坦克在Boss正面</li>
+          <li>开减伤吃刺鼻呕吐</li>
+          <li>换嘲管理debuff层数</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>狂啸阶段全团血量猛掉，注意保人</li>
+          <li>孢子减伤buff要覆盖好</li>
+          <li>近战组血量始终保持健康</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>近战硬吃刺鼻呕吐不能跑</li>
+          <li>被孢子点名的人跑到人群密集处</li>
+          <li>全程Rush Boss本体</li>
+          <li>5分钟狂暴Rush</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">治疗压力超大，建议带法力药水</span>
+      <span class="prep-tag prep-danger">孢子不炸到人群=灭团</span>
+      <span class="prep-tag">惩戒骑/增强萨/暗牧提供辅助光环</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 6 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">6</span> 腐面 · Rotface</h2>
+    <p class="boss-desc">烂肠的兄弟。软泥机制Boss，核心是在有限场地内控制软泥怪不要融合。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>软泥附体：</strong>随机点名玩家，脚下产生绿色粘液，必须跑向指定位置排放。<br>
+      <strong>小软泥：</strong>出现一只绿色小软泥，指定风筝坦拉着满场跑，不能碰到任何人。<br>
+      <strong>融合：</strong>如果小软泥碰到大软泥池会变大，层数越高越难打。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>主坦拉住腐面</li>
+          <li>副坦风筝小软泥，注意路线不要碰到人</li>
+          <li>被软泥点名的玩家不能往坦克方向跑</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>全团持续掉血，保持HOT覆盖</li>
+          <li>风筝坦需要单独关照</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>场地被软泥覆盖后DPS环境变差</li>
+          <li>被点名软泥立刻跑向指定排放点</li>
+          <li>全程Rush Boss本体即可</li>
+          <li>注意躲开地上的绿水</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">风筝坦需要高移速（工程火箭靴推荐）</span>
+      <span class="prep-tag prep-danger">小软泥碰到任何=灭</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 7 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">7</span> 普崔塞德教授 · Professor Putricide</h2>
+    <p class="boss-desc">ICC最复杂的战斗之一。三阶段多机制Boss，橙斧任务的关键Boss。P1气体软泥→P2软泥投掷→P3狂暴阶段。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>P1突变气体：</strong>点名玩家脚下产生绿圈，要放远处。气体软泥出现后需要DPS打掉。<br>
+      <strong>P2软泥投掷：</strong>绿色/橙色软泥投掷到指定位置，要接住不能掉地上。<br>
+      <strong>P3狂暴：</strong>Boss变成憎恶体，全团AOE+召唤小怪，DPS必须全力Rush。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>P1主坦拉Boss，副坦拉气体软泥</li>
+          <li>P3注意风筝小怪</li>
+          <li>背对人群站位</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>P3全团AOE压力极大</li>
+          <li>被点名的玩家需要快速抬血</li>
+          <li>P1-P2转阶段注意坦克</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>P1优先打掉气体软泥</li>
+          <li>软泥投掷时专人接软泥（提前站位）</li>
+          <li>P3全技能爆发Rush Boss</li>
+          <li>被点名放绿圈要跑向墙边</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">P3需要全团爆发药水Rush</span>
+      <span class="prep-tag prep-danger">软泥掉地上直接灭团</span>
+      <span class="prep-tag">硬件DPS要求极高的Boss</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 8 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">8</span> 鲜血议会 · Blood Prince Council</h2>
+    <p class="boss-desc">三个鲜血王子共享血条的战斗。核心机制是动能炸弹和三个王子的"强化"轮换。不是最难但需要良好的协调和节奏感。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>动能炸弹：</strong>全队必须随时注意天上掉下来的蓝色球体，远程必须第一时间转火打掉。<br>
+      <strong>强化轮换：</strong>三个王子轮流获得强化buff，被强化者攻击力大增且免疫部分控制。<br>
+      <strong>暗影共振：</strong>未强化的王子之间若有连线，需要远程跑开断线。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>3个坦克各拉一个王子</li>
+          <li>被强化的王子坦克开减伤</li>
+          <li>注意站位拉开三个王子</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>强化轮换时被强化的王子坦掉血巨快</li>
+          <li>安排对应治疗看当前强化的坦克</li>
+          <li>AOE伤害需要全团覆盖</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>所有远程第一优先级打动能炸弹</li>
+          <li>被强化的王子受伤200%加成，集中火力</li>
+          <li>暗影连线要跑开</li>
+          <li>近战注意远离被旋风斩的王子的路径</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-danger">动能炸弹不转火直接灭</span>
+      <span class="prep-tag">坦克分配要提前确定谁拉哪个</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 9 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">9</span> 鲜血女王拉娜瑟尔 · Blood Queen Lana'thel</h2>
+    <p class="boss-desc">Banshee女王的战斗，核心是被咬变成吸血鬼的机制。整个战斗围绕吸血鬼契约展开。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>吸血鬼之吻：</strong>每45秒Boss会咬一名非吸血鬼玩家，将其变成吸血鬼。<br>
+      <strong>暗影契约：</strong>吸血鬼状态玩家DPS+100%，但每15秒需要咬另一名玩家传递，否则自己失控。<br>
+      <strong>天空投掷：</strong>点名玩家被扔到空中，掉落下来会砸到人。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>拉住Boss和生成的暗影</li>
+          <li>空中投掷后Boss会重置仇恨注意</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>空中投掷的队友落地前刷满血</li>
+          <li>全团持续掉血环境</li>
+          <li>被咬的治疗要安排咬链</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>被咬的人15秒内必须咬另一名玩家</li>
+          <li>咬的顺序安排好，尽量给DPS高的人</li>
+          <li>被咬后DPS翻倍，爆发期全力输出</li>
+          <li>空投后跑开落点不要砸到人</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">被咬后DPS翻倍，安排给近战/橙斧战/猫德</span>
+      <span class="prep-tag prep-danger">不咬人=失控攻击队友</span>
+      <span class="prep-tag">提前安排好咬人顺序链</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 10 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">10</span> 瓦莉瑟瑞亚 · Valithria Dreamwalker</h2>
+    <p class="boss-desc">绿龙女王的治疗比赛。这个Boss不是打死的而是治死的。P1全团不断清小怪保护绿龙，治疗全力刷绿龙的血条到100%。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>治疗绿龙：</strong>所有治疗职业全力刷绿龙的血，DPS负责清小怪保护。<br>
+      <strong>小怪类型：</strong>僵尸(优先级低)、大胖子(踩绿龙需打断)、法师(远距离施法)、冰龙(全团AOE)。<br>
+      <strong>梦行者传送门：</strong>进入绿色传送门可到达上方平台打小怪，同时获得100%治疗加成buff。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>拉住所有小怪远离绿龙</li>
+          <li>胖子出来第一时间拉走+打断</li>
+          <li>优先保护治疗不被干扰</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>除了坦克身上的HOT，全部技能刷绿龙</li>
+          <li>进传送门获得100%治疗加成</li>
+          <li>奶骑圣光术无敌、戒律盾盾流对绿龙有效</li>
+          <li>不要忘记坦克也需要治疗</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>优先击杀法师小怪（最远距离的人）</li>
+          <li>大胖子出来坦克拉好后全力击杀</li>
+          <li>冰龙出现时全团优先转火</li>
+          <li>DPS高的也可以进去打平台上小怪</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">奶骑/戒律牧是MVP</span>
+      <span class="prep-tag prep-danger">大胖子踩到绿龙直接爆炸</span>
+      <span class="prep-tag">进传送门的治疗要注意回来时间</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 11 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">11</span> 辛达苟萨 · Sindragosa</h2>
+    <p class="boss-desc">蓝龙女王玛里苟斯的配偶，冰霜巨龙。是ICC最考走位的Boss之一。核心机制是全团分散+冰墓+拉人+最后阶段的狂暴无束魔法。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制</span>
+      <p><strong>冰墓：</strong>随机点2-3名远程脚下产生冰墓，被冰墓封住的队友需要DPS打出来。<br>
+      <strong>拉人：</strong>Boss把全团拉向自己，所有人必须立刻跑开否则被顺劈。<br>
+      <strong>无束魔法：</strong>P3阶段全团不断叠加debuff，法师/MDT可以偷/驱散。层数高了秒杀。<br>
+      <strong>冰霜光环：</strong>全团持续掉血，自然抗性buff有效。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>拉Boss背对人群</li>
+          <li>拉人后尽快跑回原位</li>
+          <li>P3注意自身debuff层数换坦</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>冰墓时期被冰封的队友需要单刷</li>
+          <li>P3全团血量压力最大阶段</li>
+          <li>驱散职业驱散无束魔法</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>冰墓点名远程，中的人跑向边场放冰</li>
+          <li>被冰封的队友要打掉冰墓救人</li>
+          <li>拉人时立刻跑开Boss正面</li>
+          <li>P3全团分散站位</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">法师/牧师/MD负责偷/驱散魔法</span>
+      <span class="prep-tag prep-danger">P3无束魔法不处理=秒杀</span>
+      <span class="prep-tag">自然抗性合剂有效</span>
+    </div>
+  </div>
+
+  <!-- ===== Boss 12 ===== -->
+  <div class="boss-section">
+    <h2><span class="boss-number">12</span> 巫妖王 · The Lich King</h2>
+    <p class="boss-desc">阿尔萨斯·米奈希尔，天灾军团之主，WLK的最终Boss。这是魔兽历史上最经典的Boss战之一。全5阶段、大量机制、极高容错率要求。开荒难度极大。</p>
+
+    <div class="boss-mech">
+      <span class="mech-label">⚠️ 关键机制 (全阶段)</span>
+      <p><strong>阶段1 (100-70%)：</strong> 召唤食尸鬼+Boss本体基础技能。近战注意暗影陷阱。<br>
+      <strong>阶段2 (70-40%)：</strong> 呼唤维库人+狂怒灵魂，灵魂出壳要远离人群炸。<br>
+      <strong>阶段3 (40-10%)：</strong> 华尔琪抓人+污染黑水。华尔琪抓人必须救下来，黑水必须有人踩。<br>
+      <strong>阶段4 (10-0%)：</strong> 全团被灵魂剥离到冰封王座上打巫妖王灵魂+被控的队友。<br>
+      <strong>阶段5 (0%)：</strong> 巫妖王对弗丁施放霜之哀伤，你需要控制灵魂救场，捡起霜哀击杀巫妖王。</p>
+    </div>
+
+    <div class="boss-roles">
+      <div class="boss-role-card">
+        <span class="role-title tank-title">🛡️ 坦克</span>
+        <ul>
+          <li>P1拉住食尸鬼+疫群</li>
+          <li>P2拉住维库人</li>
+          <li>P3华尔琪抓人时拉住Boss</li>
+          <li>P4灵魂剥离注意躲开大怪</li>
+          <li>全P保持换嘲减伤循环</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title heal-title">💚 治疗</span>
+        <ul>
+          <li>P1-3全团血线保持健康</li>
+          <li>P3黑水阶段近战组压力大</li>
+          <li>P4灵魂剥离时期需要自保</li>
+          <li>HLK战斗40-60分钟，控蓝策略关键</li>
+        </ul>
+      </div>
+      <div class="boss-role-card">
+        <span class="role-title dps-title">⚔️ DPS</span>
+        <ul>
+          <li>P1及时转火召唤食尸鬼</li>
+          <li>P2灵魂出壳立刻远离人群</li>
+          <li>P3华尔琪优先救被抓的人</li>
+          <li>P3污染黑水必须有人踩</li>
+          <li>P4全力打Boss+Rush</li>
+          <li>全P需要注意站位分散</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boss-prep">
+      <span class="prep-tag prep-gold">全团建议冰霜巨龙/无尽怒气合剂</span>
+      <span class="prep-tag prep-gold">符文法力药水/速度药水备足</span>
+      <span class="prep-tag prep-danger">华尔琪抓人救不下来必灭</span>
+      <span class="prep-tag prep-danger">黑水没人踩全团爆炸</span>
+      <span class="prep-tag prep-danger">P4灵魂剥离阶段生死一线</span>
+      <span class="prep-tag">带好修理机器人准备灭团重来</span>
+      <span class="prep-tag">HLK开荒建议30-50把心理准备</span>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.06);">
+    <a href="../../index.html#dungeons" class="btn btn-secondary">← 返回副本列表</a>
+  </p>
+</div>
+<footer><div class="footer-links"><a href="../../index.html">首页</a><a href="../../index.html#dungeons">副本</a></div><p>时光之冕 &copy; 2026</p></footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>
